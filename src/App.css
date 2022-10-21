@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,6 +47,69 @@
 .mobile-menu-icon {
   display: none;
 }
+.user_header {
+  text-align: center;
+  color: #264653;
+  margin: 30px;
+}
+.user_picture {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  display: flex;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+}
+.user_card {
+  border-radius: 15px;
+  box-shadow: 7px 17px 20px -19px rgba(0, 0, 0, 0.37);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.username {
+  color: #264653;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.user_email {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.user_gender {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.user_phone {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.pagination_con {
+  margin-top: 60px;
+  text-align: center;
+}
+.page_numbers,
+.prev,
+.next {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 4px 5px;
+}
+
 @media screen and (max-width: 700px) {
   .nav_logo {
     display: flex;
@@ -52,13 +118,6 @@
   }
   .nav_links {
     display: none;
-  }
-  .logout_btn {
-    top: 25px;
-    position: absolute;
-    left: 380px;
-    padding: 10px 10px;
-    margin-right: 20px;
   }
   .nav_links_mobile {
     position: absolute;
