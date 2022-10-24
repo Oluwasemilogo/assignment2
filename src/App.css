@@ -6,47 +6,6 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-}
-
-.nav_logo {
-  margin-left: 30px;
-}
-.nav_links {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav_links_container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-right: 120px;
-}
-.home {
-  text-decoration: none;
-  /* padding: 10px 10px; */
-  color: black;
-  margin: 0 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-.account {
-  text-decoration: none;
-  padding: 10px 10px;
-  color: black;
-  margin: 0 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-.mobile-menu-icon {
-  display: none;
-}
 .user_header {
   text-align: center;
   color: #264653;
@@ -109,48 +68,38 @@ body {
   margin-right: 5px;
   padding: 4px 5px;
 }
-
+.page_numbers:hover,
+.prev:hover,
+.next:hover {
+  border: 1px solid #264653;
+  border-radius: 5px;
+}
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.home-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #264653;
+}
+.user-link {
+  text-decoration: none;
+}
+.users {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 12px 18px;
+  color: black;
+  background: white;
+  border: 1px solid #264653;
+}
 @media screen and (max-width: 700px) {
-  .nav_logo {
+  .card_container {
     display: flex;
-    margin-top: 40px;
-    margin-left: 0px;
-  }
-  .nav_links {
-    display: none;
-  }
-  .nav_links_mobile {
-    position: absolute;
-    display: block;
-    list-style: none;
-    background-color: black;
-    top: 75px;
-    width: 100%;
-    margin-top: 30px;
-    left: 0;
-  }
-  .home {
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-  }
-  .account {
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-    position: absolute;
-    font-size: 30px;
-    top: 35px;
-    left: 320px;
-    width: 42px;
-    height: 42px;
+    flex-direction: column;
   }
 }
