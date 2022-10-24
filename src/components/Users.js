@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "../App.css";
 
 function Users() {
@@ -11,7 +11,7 @@ function Users() {
 
   useEffect(() => {
     getUsers(params.page);
-  }, []);
+  }, [params.page]);
 
   const getUsers = async (val) => {
     setLoading(true);
